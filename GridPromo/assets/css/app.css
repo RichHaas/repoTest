@@ -1,0 +1,114 @@
+a:link
+{
+    text-decoration:none;
+}
+body {
+    font-family: "Lato", sans-serif;
+    color: #333;
+}
+header {
+    padding: 20px 0;
+}
+nav{
+    text-align: right;
+}
+.nav-item{
+    display: inline-block !important;
+}
+.nav-link{
+    color: black;
+    padding: 10px 5px !important;
+}
+.nav-link:hover{
+    color: #9a2d9b !important;
+}
+.menu-step {
+    padding: 0px;
+    margin: 0px;
+}
+section{
+    margin-top: 15px;
+}
+.thumbnail{
+    border-radius: 25px;
+}
+.article-thumbnail{
+    border: #009999 solid 10px; /*Verde*/
+}
+
+
+.aside-thumbnail{
+    border: #9a2d9b solid 10px; /*Morado*/
+}
+.img-aside-thumbnail{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.img-article-thumbnail{
+    padding-right: 35px;
+    padding-left: 35px;
+}
+hr {
+    border: 1px #009999 dashed;
+    max-width: 90%;
+    margin-top: 8px;
+}
+.article-thumbnail:hover, .aside-thumbnail:hover{color: #9a2d9b !important; transition: all .5s;}
+.verde {color: #009999;}
+.morado {color: #9a2d9b;}
+.icon-r-social{
+    width: 50px;
+    background: #9a2d9b;
+    border-radius: 100%;
+}
+
+footer{text-align: center;}
+
+@media (max-width: 330px){
+    body{font-size: 1.4em;}
+    aside{display: none;}
+}
+@media (max-width: 411px) {
+    hr{display: none;}
+    .article-thumbnail{
+        min-height: 200px !important;
+        max-height: 200px !important;
+    }
+    .img-article-thumbnail, .txt-description-article{
+        display: inline-block !important;
+        max-width: 49% !important;
+        margin: 0 !important;
+        padding: 0% 5% !important;
+    }
+}
+@media (min-width: 331px) and (max-width: 768px){
+    body{
+        font-size: 1.15em;
+        margin: 0px 25px;
+    }
+    aside{
+        display: none;
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1366px){
+    body{
+        font-size: 1.2em;
+        margin: 0px 100px;
+    }
+    .txt-description-article{
+        min-height: 35px;
+        max-height: 35px;
+    }
+}
+@media (min-width: 1367px){
+    body{
+        font-size: 1.6em;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .txt-description-article{
+        min-height: 35px;
+        max-height: 35px;
+    }
+}
